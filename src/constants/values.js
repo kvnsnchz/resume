@@ -170,8 +170,8 @@ const qualification = [
   },
   {
     'name' : 'Blender',
-    'filled' : 3,
-    'void' : 2
+    'filled' : 2,
+    'void' : 3
   },
   {
     'name' : 'Laravel',
