@@ -195,8 +195,8 @@ const qualification = [
   },
   {
     'name' : 'Yii',
-    'filled' : 3,
-    'void' : 2
+    'filled' : 2,
+    'void' : 3
   },
   {
     'name' : 'MySql',
