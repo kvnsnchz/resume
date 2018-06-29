@@ -1,9 +1,26 @@
 const contactInformation = [
-  'kvn9616@gmail.com',
-  '+58 0426-675-3088',
-  'San Antonio, Venezuela',
-  '16 October. 1996',
-   "kvnsnchz"
+  {
+    'value' : 'kvn9616@gmail.com',
+    'icon' : 'mail',
+  },
+  {
+    'value' : '+58 0426-675-3088',
+    'icon' : 'mobile'
+  },
+  {
+    'value' : 'San Antonio, Venezuela',
+    'icon' : 'environment'
+  },
+  {
+    'value' : '16 October. 1996',
+    'icon' : 'calendar'
+  },
+  {
+    'value' : 'kvnsnchz',
+    'icon' : 'github',
+    'link' : 'https://github.com/kvnsnchz'
+  },
+   
 ]
 
 const workExperience = [
@@ -16,7 +33,8 @@ const workExperience = [
       'Desarrollo de la ruta más óptima para un sistema de transporte de Israel, desarrollado en Java.'
     ],
     'boss' : 'Br. Abraham Bronstein',
-    'email_boss' : 'bronstein.abraham@gmail.com'
+    'email_boss' : 'bronstein.abraham@gmail.com',
+    'link' : 'https://github.com/kvnsnchz/Transporte'
   },
   {
     'work' : 'Semillero en laboratorio de prototipos',
@@ -29,7 +47,8 @@ const workExperience = [
       'En desarrollo de la cinemática directa e inversa.'
     ],
     'boss' : 'Ing. Ángel Gil',
-    'email_boss' : 'agil@unet.edu.ve'
+    'email_boss' : 'agil@unet.edu.ve',
+    'link' : 'https://github.com/kvnsnchz/Manipulador-Industrial-UNET'
   },
   {
     'work' : 'Profesor estudiante',
@@ -40,7 +59,8 @@ const workExperience = [
       'Profesor estudiante en la materia Computacion I'
     ],
     'boss' : 'Ing. Armando Carrero',
-    'email_boss' : 'jacarreromu@gmail.com'
+    'email_boss' : 'jacarreromu@gmail.com',
+    'link' : 'https://www.unet.edu.ve'
   }
 ]
 
@@ -101,10 +121,101 @@ const achievement = [
   },
 
 ]
+
+const qualification = [
+  {
+    'name' : 'Ingles',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'C++',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'Java',
+    'filled' : 4,
+    'void' : 1
+  },
+  {
+    'name' : 'JavaScript',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'C#',
+    'filled' : 2,
+    'void' : 3
+  },
+  {
+    'name' : 'HTML',
+    'filled' : 4,
+    'void' : 1
+  },
+  {
+    'name' : 'CSS',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'PHP',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'TypeScript',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'Blender',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'Laravel',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'API REST',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'React js',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'Ionic',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'Yii',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'MySql',
+    'filled' : 3,
+    'void' : 2
+  },
+  {
+    'name' : 'SQL',
+    'filled' : 3,
+    'void' : 2
+  },
+  
+]
+
 export {
   contactInformation,
   workExperience,
   education,
   abilitie,
-  achievement
+  achievement,
+  qualification
 };

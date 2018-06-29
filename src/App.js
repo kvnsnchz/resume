@@ -3,6 +3,7 @@ import './App.css';
 import Header from './containers/header';
 import ContactBar from './containers/contactBar';
 import Body from './containers/body';
+import Footer from './containers/footer';
 
 class App extends Component {
   render () {
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
         <ContactBar />
         <Body />
+        <Footer />
       </div>
     );
   }

@@ -32,6 +32,7 @@
   flex-wrap: wrap-reverse;
   background: #0f2b47;
   align-items: center;
+  justify-content: center;
 }
 
 .main-wrapper > p{
@@ -82,8 +83,13 @@
   background: #242633;
 }
 
-.bar-wrapper > p{
-  min-width: 100px;
+.bar-wrapper > div{
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-wrapper > div > p{
+  min-width: 270px;
   margin: 0px;
   padding: 12px;
   color: #d4d5d6;
@@ -91,28 +97,45 @@
 
 
 
+.bar-wrapper > div > p > a{
+  color: #d4d5d6;
+}
+
+.bar-wrapper > div > p > a:hover{
+  color: #40a9ff;
+}
+
+.anticon{
+  font-size: 20px;
+  margin: 8px;
+}
+
 .body-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  text-shadow: 0.5px 0.5px 0.5px rgba(150,150,150,1); 
 }
 
 .body-wrapper > .colum{
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  min-width: 450px;
+  min-width: 360px;
+  width: 45%;
   margin-left: 20px;
   margin-right: 20px;
   padding: 5px;
 }
 .ant-collapse{
-  width: 450px;
+  width: 100%;
+  margin-top: 30px !important;
 }
 .body-wrapper > .colum > .ant-collapse > .ant-collapse-item > .ant-collapse-header{
   color: #636aa8;
   font-weight: bold;
+  font-size: 1.3em;
 }
 
 .work-wrapper {
@@ -157,17 +180,68 @@
   background: #636aa8;
   color : white;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
   margin: 10px;
+  box-shadow: 2px 2px 2px lightslategray;
+  padding: 10px;
+}
+.abilitie-wrapper > p:hover{
+  
+  box-shadow: 5px 5px 5px lightslategray;
+}
+.qualification-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.qualification-wrapper > p{
+  min-width: 100px;
+  margin: 0px;
+  padding: 12px;
+  color: black;
+}
+
+.progress-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.circle-filled{
+  height: 20px;
+  width: 20px;
+  background-color: #636aa8;
+  border-radius: 100%;
+  margin: 8px;
+}
+
+.circle-void{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 3px solid #635aa8;
+  margin: 8px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #242633;
+  height: 30px;
 }
 
 @media screen and (min-width: 1000px) {
   .text-info > h1 {
-    font-size: 6em;
+    font-size: 3em;
   }
 
   .my-sexy-photo {
-    margin: auto auto;
+    margin: 30px;
   }
 }
 
@@ -183,5 +257,11 @@
   .text-info {
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .body-wrapper > .colum{
+    width: 85%;
   }
 }

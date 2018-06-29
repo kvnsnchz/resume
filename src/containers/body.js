@@ -12,6 +12,9 @@ import { abilitie } from '../constants/values';
 import Achievement from './achievement.js';
 import { achievement } from '../constants/values';
 
+import GeneralQualification from './general_qualification.js';
+import { qualification } from '../constants/values';
+
 import { Collapse } from 'antd';
 import '../../node_modules/antd/dist/antd.css';
 
@@ -34,6 +37,10 @@ class Body extends Component{
 
         const achievements = achievement.map((achiev,index) => 
             <Achievement achiev = {achiev} key = {index} />
+        );
+
+        const general_qualifications = qualification.map((qualification,index) => 
+            <GeneralQualification qualification={qualification} key={index} />
         );
         return (
             <div className="body-wrapper">
@@ -58,7 +65,7 @@ class Body extends Component{
                             {achievements}
                         </Panel>
                         <Panel header="CALIFICACIONES GENERALES" key="3" >
-                            <p>"Hola"</p>
+                            {general_qualifications}
                         </Panel>
                     </Collapse>
                 </div>

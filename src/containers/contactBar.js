@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { contactInformation } from '../constants/values';
+import Contact from './contact.js';
 
 class ContactBar extends Component {
  render () {
   const rows = contactInformation.map((contact, index) => 
-    <p key={index}>{contact}</p>
+    <Contact contact={contact} key={index} />
   );
  
   return (

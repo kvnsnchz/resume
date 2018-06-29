@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { Icon } from 'antd';
+import '../../node_modules/antd/dist/antd.css';
+
 class WorkExperience extends Component{
     
     render(){
@@ -8,7 +11,7 @@ class WorkExperience extends Component{
         );
         return(
             <div className="work-wrapper">
-                <h3> <strong> {this.props.work.work} </strong> </h3>
+                <h3> <strong> {this.props.work.work} <a href={this.props.work.link}><Icon  type='link' /></a></strong> </h3>
                 <h3>{this.props.work.organization}</h3>
                 <p className="important">{this.props.work.date}</p>
                 <p>{this.props.work.descrip_org}</p>
